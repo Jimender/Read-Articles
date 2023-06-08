@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: #33d9b2;
+}
+
 /* Reset default margin and padding */
 body,
 h1,
@@ -12,6 +16,27 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+/* Link Styles */
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #706fd3;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.article-links li {
+  margin-bottom: 10px;
 }
 
 /* Basic styles */
@@ -112,6 +137,13 @@ main {
 .ad--left-2,
 .ad--left-4 {
   z-index: -1;
+}
+
+.ad--left-5 {
+  z-index: -2;
+}
+.ad--left-6 {
+  z-index: -3;
 }
 
 /* right column ads */
