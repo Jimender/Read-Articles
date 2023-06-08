@@ -70,6 +70,20 @@ main {
   overflow: hidden;
 }
 
+/* top ads */
+.ad--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer ads */
+.ad--footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* left column ads */
 .left-column {
   display: flex;
@@ -102,9 +116,8 @@ main {
 
 /* right column ads */
 
-.right__box--1,
-.right__box--2 {
-  position: absolute;
+.right__box--1 {
+  /* position: absolute; */
   width: 300px;
   height: 600px;
 }

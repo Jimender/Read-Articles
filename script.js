@@ -1,5 +1,5 @@
 // Fetch the daily fact from the API
-fetch("http://numbersapi.com/random")
+fetch("https://numbersapi.com/random")
   .then((response) => response.text())
   .then((data) => {
     // Display the fact in the HTML
