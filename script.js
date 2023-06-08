@@ -1,11 +1,11 @@
-// Fetch the daily fact from the API
-fetch("https://numbersapi.com/random")
-  .then((response) => response.text())
-  .then((data) => {
-    // Display the fact in the HTML
-    const factElement = document.getElementById("fact");
-    factElement.textContent = data;
+// Fetch the daily fact
+fetch('https://uselessfacts.jsph.pl/random.json?language=en')
+  .then(response => response.json())
+  .then(data => {
+    const fact = data.text;
+    document.getElementById('fact').textContent = fact;
   })
-  .catch((error) => {
-    console.log("Error fetching the daily fact:", error);
+  .catch(error => {
+    console.log('Error fetching fact:', error);
+    // Handle the error gracefully
   });
